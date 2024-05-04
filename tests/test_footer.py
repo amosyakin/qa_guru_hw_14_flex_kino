@@ -17,7 +17,7 @@ def test_open_copyright(setup_browser):
 
     with allure.step('Нажать на кнопку "Документы правообладателей"'):
         browser.element('.menu-button').element(by.text('Документы правообладателей')).click()
-        browser.element('.container__title').should(have.text('Документы правообладателей2'))
+        browser.element('.container__title').should(have.text('Документы правообладателей'))
 
 
 @allure.tag("WEB")
