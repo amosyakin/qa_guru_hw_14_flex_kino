@@ -25,7 +25,7 @@ def test_open_copyright(setup_browser):
 @allure.feature('Футер')
 @allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Переход на страницу Android RuStore')
-def test_open_copyright(setup_browser):
+def test_rustore_link(setup_browser):
     with allure.step('Открытие главной страницы'):
         browser.open("/")
 
