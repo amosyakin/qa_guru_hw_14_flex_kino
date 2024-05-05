@@ -6,7 +6,7 @@ from selene import browser, have, by
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
 @allure.feature('Хэдэр')
-@allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Переход в раздел Сериалы')
 def test_open_serial_catalog_from_header(setup_browser):
     with allure.step('Открытие главной страницы'):
@@ -20,7 +20,7 @@ def test_open_serial_catalog_from_header(setup_browser):
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
 @allure.feature('Хэдэр')
-@allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Переход в раздел Фильмы')
 def test_open_film_catalog_from_header(setup_browser):
     with allure.step('Открытие главной страницы'):
@@ -34,7 +34,7 @@ def test_open_film_catalog_from_header(setup_browser):
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
 @allure.feature('Хэдэр')
-@allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Переход в раздел Подборки')
 def test_open_collection_from_header(setup_browser):
     with allure.step('Открытие главной страницы'):
@@ -48,7 +48,7 @@ def test_open_collection_from_header(setup_browser):
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
 @allure.feature('Хэдэр')
-@allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Переход в раздел Тарифы')
 def test_open_tariff_from_header(setup_browser):
     with allure.step('Открытие главной страницы'):

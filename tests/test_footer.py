@@ -6,7 +6,7 @@ from selene import browser, by, have, command
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
 @allure.feature('Футер')
-@allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Открытие страницы Документы правообладателей')
 def test_open_copyright(setup_browser):
     with allure.step('Открытие главной страницы'):
@@ -23,7 +23,7 @@ def test_open_copyright(setup_browser):
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
 @allure.feature('Футер')
-@allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Переход на страницу Android RuStore')
 def test_rustore_link(setup_browser):
     with allure.step('Открытие главной страницы'):

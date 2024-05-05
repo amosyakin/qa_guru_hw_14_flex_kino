@@ -7,7 +7,7 @@ from selene import browser, have
 @allure.severity(Severity.NORMAL)
 @allure.feature('Хэдэр')
 @allure.suite('Поиск')
-@allure.link('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Выполнить поиск по контенту')
 def test_search_by_content(setup_browser):
     with allure.step('Открытие главной страницы'):
