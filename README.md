@@ -25,17 +25,7 @@
   - Страница RuStore для Anroid-приложения
 
 ## Используемый стэк
-<img title="Python" src="gu_guru_hw_14_flex_kino/pictures/icons/python-original.svg" height="40" width="40"/>
-<img title="Pytest" src="gu_guru_hw_14_flex_kino/pictures/icons/pytest-original.svg" height="40" width="40"/>
-<img title="GitHub" src="gu_guru_hw_14_flex_kino/pictures/icons/github-original.svg" height="40" width="40"/>
-<img title="Selenium" src="gu_guru_hw_14_flex_kino/pictures/icons/selenium-original.svg" height="40" width="40"/>
-<img title="Selene" src="gu_guru_hw_14_flex_kino/pictures/icons/selene.png" height="40" width="40"/>
-<img title="Allure Report" src="gu_guru_hw_14_flex_kino/pictures/icons/Allure_Report.png" height="40" width="40"/>
-<img title="Allure TestOps" src="gu_guru_hw_14_flex_kino/pictures/icons/AllureTestOps.png" height="40" width="40"/>
-<img title="Jenkins" src="gu_guru_hw_14_flex_kino/pictures/icons/jenkins-original.svg" height="40" width="40"/>
-<img title="Jira" src="gu_guru_hw_14_flex_kino/pictures/icons/jira-original.svg" height="40" width="40"/>
-<img title="PyCharm" src="gu_guru_hw_14_flex_kino/pictures/icons/pycharm-original.svg" height="40" width="40"/>
-<img title="Telegram" src="gu_guru_hw_14_flex_kino/pictures/icons/tg.png" height="40" width="40"/>
+<img title="Python" src="gu_guru_hw_14_flex_kino/pictures/icons/python-original.svg" height="40" width="40"/> <img title="Pytest" src="gu_guru_hw_14_flex_kino/pictures/icons/pytest-original.svg" height="40" width="40"/> <img title="GitHub" src="gu_guru_hw_14_flex_kino/pictures/icons/github-original.svg" height="40" width="40"/> <img title="Selenium" src="gu_guru_hw_14_flex_kino/pictures/icons/selenium-original.svg" height="40" width="40"/> <img title="Selene" src="gu_guru_hw_14_flex_kino/pictures/icons/selene.png" height="40" width="40"/> <img title="Allure Report" src="gu_guru_hw_14_flex_kino/pictures/icons/Allure_Report.png" height="40" width="40"/> <img title="Allure TestOps" src="gu_guru_hw_14_flex_kino/pictures/icons/AllureTestOps.png" height="40" width="40"/> <img title="Jenkins" src="gu_guru_hw_14_flex_kino/pictures/icons/jenkins-original.svg" height="40" width="40"/> <img title="Jira" src="gu_guru_hw_14_flex_kino/pictures/icons/jira-original.svg" height="40" width="40"/> <img title="PyCharm" src="gu_guru_hw_14_flex_kino/pictures/icons/pycharm-original.svg" height="40" width="40"/> <img title="Telegram" src="gu_guru_hw_14_flex_kino/pictures/icons/tg.png" height="40" width="40"/>
 
 ## Запуск тестов из терминала
 ### Для запуска всех автотестов выполнить в cli:
