@@ -1,6 +1,8 @@
 import allure
 from allure_commons.types import Severity
-from selene import browser, have
+
+from gu_guru_hw_14_flex_kino.model.pages.general_page import GeneralPage
+from gu_guru_hw_14_flex_kino.model.pages.header import Header
 
 
 @allure.tag("WEB")
@@ -11,11 +13,13 @@ from selene import browser, have
 @allure.title('Выполнить поиск по контенту')
 def test_search_by_content(setup_browser):
     with allure.step('Открытие главной страницы'):
-        browser.open("/")
+        general_page = GeneralPage()
+        general_page.open()
 
     with allure.step('Нажать на иконку "Поиск"'):
-        browser.element('.header .search').click()
+        header = Header()
+        header.click_search_button()
 
     with allure.step('Ввести название контента "Оппенгеймер"'):
-        browser.element('.search-input__control').type('Оппенгеймер')
-        browser.element('.search__result').should(have.text('Оппенгеймер'))
+        header.type_content_to_search('Оппенгеймер')
+        header.should_search_content('Оппенгеймер')

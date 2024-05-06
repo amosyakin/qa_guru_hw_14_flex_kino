@@ -1,59 +1,27 @@
 import allure
+import pytest
 from allure_commons.types import Severity
-from selene import browser, have, by
+
+from gu_guru_hw_14_flex_kino.model.pages.general_page import GeneralPage
+from gu_guru_hw_14_flex_kino.model.pages.header import Header
+from gu_guru_hw_14_flex_kino.model.pages.page import Page
 
 
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
-@allure.feature('Хэдэр')
+@allure.feature('Header')
 @allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
-@allure.title('Переход в раздел Сериалы')
-def test_open_serial_catalog_from_header(setup_browser):
-    with allure.step('Открытие главной страницы'):
-        browser.open("/")
+@pytest.mark.parametrize("menu", ['Сериалы', 'Фильмы', 'Подборки', 'Тарифы'])
+class TestHeaderMenu:
 
-    with allure.step('В хэдэре перейти в раздел "Сериалы"'):
-        browser.element('.header .menu').element(by.text('Сериалы')).click()
-        browser.element('.container__title').should(have.text('Сериалы'))
+    @allure.title('Переход в раздел {menu}')
+    def test_open_serial_catalog_from_header(self, setup_browser, menu):
+        with allure.step('Открытие главной страницы'):
+            general_page = GeneralPage()
+            general_page.open()
 
-
-@allure.tag("WEB")
-@allure.severity(Severity.NORMAL)
-@allure.feature('Хэдэр')
-@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
-@allure.title('Переход в раздел Фильмы')
-def test_open_film_catalog_from_header(setup_browser):
-    with allure.step('Открытие главной страницы'):
-        browser.open("/")
-
-    with allure.step('В хэдэре перейти в раздел "Фильмы"'):
-        browser.element('.header .menu').element(by.text('Фильмы')).click()
-        browser.element('.container__title').should(have.text('Фильмы'))
-
-
-@allure.tag("WEB")
-@allure.severity(Severity.NORMAL)
-@allure.feature('Хэдэр')
-@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
-@allure.title('Переход в раздел Подборки')
-def test_open_collection_from_header(setup_browser):
-    with allure.step('Открытие главной страницы'):
-        browser.open("/")
-
-    with allure.step('В хэдэре перейти в раздел "Подборки"'):
-        browser.element('.header .menu').element(by.text('Подборки')).click()
-        browser.element('.container__title').should(have.text('Подборки'))
-
-
-@allure.tag("WEB")
-@allure.severity(Severity.NORMAL)
-@allure.feature('Хэдэр')
-@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
-@allure.title('Переход в раздел Тарифы')
-def test_open_tariff_from_header(setup_browser):
-    with allure.step('Открытие главной страницы'):
-        browser.open("/")
-
-    with allure.step('В хэдэре перейти в раздел "Тарифы"'):
-        browser.element('.header .menu').element(by.text('Тарифы')).click()
-        browser.element('.container__title').should(have.text('Тарифы'))
+        with allure.step('В хэдэре перейти в раздел {menu}'):
+            header = Header()
+            header.click_menu(menu)
+            page = Page()
+            page.should_page_title(menu)
