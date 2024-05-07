@@ -1,7 +1,12 @@
-from selene import browser, by, have, command
+import allure
+from selene import browser
 
 
 class GeneralPage:
     def open(self):
-        browser.open('/')
-        return self
+        with allure.step('Открытие главной страницы'):
+            browser.open('/')
+            return self
+
+
+general_page = GeneralPage()

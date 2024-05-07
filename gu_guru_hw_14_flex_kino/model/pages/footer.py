@@ -1,3 +1,4 @@
+import allure
 from selene import browser, command, by
 
 
@@ -9,10 +10,16 @@ class Footer:
         self.app_icon = browser.element('.footer__applications')
 
     def scroll_to_footer(self):
-        self.footer.perform(command.js.scroll_into_view)
+        with allure.step('Пролистать до футера'):
+            self.footer.perform(command.js.scroll_into_view)
 
     def click_button(self, button_name):
-        self.footer_menu.element(by.text(button_name)).click()
+        with allure.step(f'Нажать на кнопку "{button_name}"'):
+            self.footer_menu.element(by.text(button_name)).click()
 
     def click_app_icons(self, app_name):
-        self.app_icon.element(f'img[alt="{app_name}"]').click()
+        with allure.step(f'Нажать на кнопку "{app_name}"'):
+            self.app_icon.element(f'img[alt="{app_name}"]').click()
+
+
+footer = Footer()

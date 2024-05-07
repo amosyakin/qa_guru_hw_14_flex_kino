@@ -10,3 +10,6 @@ class Page:
 
     def should_url_redirect(self, url):
         browser.should(have.url(url))
+
+
+page = Page()
