@@ -7,7 +7,7 @@ from gu_guru_hw_14_flex_kino.model.pages.header import header
 
 @allure.tag("WEB")
 @allure.severity(Severity.NORMAL)
-@allure.feature('Хэдэр')
+@allure.feature('Header')
 @allure.suite('Поиск')
 @allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
 @allure.title('Выполнить поиск по контенту')
